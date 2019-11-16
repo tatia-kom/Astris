@@ -1,0 +1,48 @@
+@import "./var";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $mainFont;
+  color: $grey;
+  background: $bodyColor;
+}
+
+input, textarea, select, button {
+  outline: none;
+  box-sizing: border-box;
+}
+
+header, footer, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.text-center {
+  text-align: center;
+}
+
+div, span, p, header, footer, nav, form {
+  box-sizing: border-box;
+}
+
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1459px) {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+  }
+
+  @media (max-width: 1199px) {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+}

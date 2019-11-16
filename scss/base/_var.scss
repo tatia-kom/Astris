@@ -1,0 +1,29 @@
+// fonts
+
+$mainFont: 'Open Sans';
+
+// colors
+
+$bodyColor: #F9F9F9;
+$seaColor: #059DBE;
+$grey: #666;
+
+// mixins
+
+@mixin placeholderColor($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+  &::placeholder {
+    color: $color;
+  }
+}
