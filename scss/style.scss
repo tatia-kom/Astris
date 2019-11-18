@@ -2,13 +2,19 @@
 @import "base/fonts";
 @import "base/var";
 
+@import "components/button/button";
+
 @import "components/header/header";
+@import "components/top/top";
+
+@import "components/about";
+@import "components/plan";
+@import "components/plan-big";
+@import "components/arch";
+@import "components/interior";
+@import "components/infra";
+@import "components/docs";
+
 @import "components/footer/footer";
 
-@import "components/adv/adv";
-@import "components/breads/breads";
-@import "components/pagination/pagination";
-
-@import "components/page/page";
-@import "components/page/left-block";
-@import "components/news/news-block";
+@import "components/modal/modal";

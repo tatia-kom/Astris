@@ -1,1 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700&display=swap&subset=cyrillic');
+@font-face {
+  font-family: 'Orchidea Pro Regular';
+  src: url('../fonts/OrchideaPro-Regular.eot');
+  src: url('../fonts/OrchideaPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OrchideaPro-Regular.woff') format('woff'),
+  url('../fonts/OrchideaPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Orchidea Pro Medium';
+  src: url('../fonts/OrchideaPro-Medium.eot');
+  src: url('../fonts/OrchideaPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OrchideaPro-Medium.woff') format('woff'),
+  url('../fonts/OrchideaPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Orchidea Pro SemiBold';
+  src: url('../fonts/OrchideaPro-SemiBold.eot');
+  src: url('../fonts/OrchideaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OrchideaPro-SemiBold.woff') format('woff'),
+  url('../fonts/OrchideaPro-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

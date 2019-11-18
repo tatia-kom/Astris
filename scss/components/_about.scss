@@ -1,0 +1,205 @@
+@import "../base/var";
+
+.about {
+  padding: 100px 0 0;
+
+  @media (max-width: $sm) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: $xs) {
+    padding-top: 30px;
+  }
+
+  &__slider {
+    margin: 100px 0 0;
+
+    @media (max-width: $sm) {
+      margin-top: 40px;
+    }
+
+    @media (max-width: $xs) {
+      margin-top: 30px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__slide {
+
+  }
+
+  &__flex {
+    display: flex;
+    position: relative;
+    height: 618px;
+
+    @media (max-width: $lg) {
+      height: 386px;
+    }
+
+    @media (max-width: $sm) {
+      height: 280px;
+    }
+
+    @media (max-width: $xs) {
+      height: auto;
+      flex-direction: column;
+    }
+  }
+
+  &__photo {
+    width: 46%; // 883px
+    height: 618px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (max-width: $lg) {
+      height: 386px;
+    }
+
+    @media (max-width: $sm) {
+      height: 280px;
+    }
+
+    @media (max-width: $xs) {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 55%;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    height: calc(618px - (82px + 32px + 40px + 130px));
+
+    @media (max-width: $lg) {
+      width: 52%;
+      margin-top: 30px;
+      height: calc(386px - (82px + 32px + 40px + 30px));
+    }
+
+    @media (max-width: $sm) {
+      margin-top: 15px;
+      height: calc(280px - (32px + 40px + 15px));
+    }
+
+    @media (max-width: $xs) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__slide-title {
+    font-family: $fontSemiBold;
+    font-size: 24px;
+
+    @media (max-width: $xs) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    font-family: $fontMedium;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 24px;
+
+    @media (max-width: $sm) {
+      line-height: 24px;
+      margin-top: 15px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: justify;
+    }
+  }
+
+  &__button {
+    margin: auto auto 0;
+
+    @media (max-width: $xs) {
+      margin: 15px auto 0;
+    }
+  }
+
+
+
+  .slick-dots {
+    position: absolute;
+    bottom: 82px;
+    left: calc((100% - #{$containerWidth})/2 + (#{$containerWidth}*0.55)/2);
+    transform: translateX(-50%);
+
+    @media (max-width: $lg) {
+      left: calc((100% - #{$containerWidthLG})/2 + (#{$containerWidthLG}*0.52)/2);
+    }
+
+    @media (max-width: $md) {
+      left: calc((100% - #{$containerWidthMD})/2 + (#{$containerWidthMD}*0.52)/2);
+    }
+
+    @media (max-width: $sm) {
+      bottom: 9px;
+      left: calc((100% - #{$containerWidthSM})/2 + (#{$containerWidthSM}*0.52)/2);
+    }
+
+    @media (max-width: $xs) {
+      bottom: 4px;
+      left: 50%;
+    }
+  }
+
+  .slick-arrow {
+    bottom: calc(82px - 16px + 7px);
+    position: absolute;
+
+    @media (max-width: $sm) {
+      bottom: 0;
+    }
+  }
+  .slick-prev {
+    left: calc((100% - #{$containerWidth})/2 + (#{$containerWidth}*0.55)/2 - #{$buttonWidth}/2 - 25px);
+
+    @media (max-width: $lg) {
+      left: calc((100% - #{$containerWidthLG})/2 + (#{$containerWidthLG}*0.52)/2 - #{$buttonWidth}/2 - 25px);
+    }
+
+    @media (max-width: $md) {
+      left: calc((100% - #{$containerWidthMD})/2 + (#{$containerWidthMD}*0.52)/2 - #{$buttonWidth}/2 - 25px);
+    }
+
+    @media (max-width: $sm) {
+      left: calc((100% - #{$containerWidthSM})/2 + (#{$containerWidthSM}*0.52)/2 - #{$buttonWidth}/2 - 25px);
+    }
+
+    @media (max-width: $xs) {
+      left: calc(50% - #{$buttonWidth}/2);
+    }
+  }
+  .slick-next {
+    left: calc((100% - #{$containerWidth})/2 + (#{$containerWidth}*0.55)/2 + #{$buttonWidth}/2 + 10px);
+
+    @media (max-width: $lg) {
+      left: calc((100% - #{$containerWidthLG})/2 + (#{$containerWidthLG}*0.52)/2 + #{$buttonWidth}/2 + 10px);
+    }
+
+    @media (max-width: $md) {
+      left: calc((100% - #{$containerWidthMD})/2 + (#{$containerWidthMD}*0.52)/2 + #{$buttonWidth}/2 + 10px);
+    }
+
+    @media (max-width: $sm) {
+      left: calc((100% - #{$containerWidthSM})/2 + (#{$containerWidthSM}*0.52)/2 + #{$buttonWidth}/2 + 10px);
+    }
+
+    @media (max-width: $xs) {
+      left: calc(50% + #{$buttonWidth}/2 - 12px);
+    }
+  }
+}

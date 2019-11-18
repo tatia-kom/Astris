@@ -3,9 +3,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: $mainFont;
-  color: $grey;
-  background: $bodyColor;
+  font-family: $fontRegular;
+
+  &.modal-opened {
+    overflow: hidden;
+  }
 }
 
 input, textarea, select, button {
@@ -17,7 +19,7 @@ header, footer, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-a {
+a, button {
   text-decoration: none;
   transition: 0.3s;
 }
@@ -32,17 +34,196 @@ div, span, p, header, footer, nav, form {
 
 
 .container {
-  max-width: 1400px;
+  max-width: $containerWidth;
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 1459px) {
-    margin: 0 30px;
-    width: calc(100% - 60px);
+  @media (max-width: $lg) {
+    width: $containerWidthLG;
   }
 
-  @media (max-width: 1199px) {
+  @media (max-width: $md) {
+    width: $containerWidthMD;
+  }
+
+  @media (max-width: $sm) {
+    width: $containerWidthSM;
+  }
+
+  @media (max-width: $xs) {
     width: calc(100% - 30px);
     margin: 0 15px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-family: $fontMedium;
+  font-size: 64px;
+  color: $bronze;
+
+  @media (max-width: $sm) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $xs) {
+    font-size: 24px;
+  }
+
+  &--small {
+    font-size: 36px;
+    line-height: 80px;
+
+    @media (max-width: $xs) {
+      font-size: 22px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+  li {
+    width: 14px;
+    height: 14px;
+    border: 1px solid transparent;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 2.5px;
+
+    @media (max-width: $xs) {
+      width: 8px;
+      height: 8px;
+    }
+
+    &.slick-active {
+      border-color: $bronze;
+
+      button {
+        background: $bronze;
+      }
+    }
+
+    button {
+      font-size: 0;
+      color: transparent;
+      width: 8px;
+      display: block;
+      height: 8px;
+      margin: auto;
+      border-radius: 50%;
+      background: #C4C4C4;
+      border: 0;
+      outline: none;
+      padding: 0;
+      transition: 0.3s;
+
+      @media (max-width: $xs) {
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+}
+
+.slick-arrow {
+  border: 0;
+  width: 20px;
+  height: 32px;
+  font-size: 0;
+  padding: 0;
+  color: transparent;
+  background: url('../img/arrow.svg') no-repeat center;
+  cursor: pointer;
+
+  @media (max-width: $xs) {
+    width: 12.5px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  &.slick-prev {
+    transform: scale(-1,1);
+    z-index: 100;
+  }
+}
+
+.grey {
+  background: radial-gradient(70.5% 139.1% at 55.91% 66.26%, #47474A 0%, #1E2029 100%);
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 501px;
+    z-index: 1;
+
+    @media (max-width: $sm) {
+      height: 250px;
+    }
+
+    @media (max-width: $xs) {
+      height: 220px;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 367px;
+    z-index: 1;
+
+    @media (max-width: $sm) {
+      height: 220px;
+    }
+
+    @media (max-width: $xs) {
+      height: 245px;
+    }
+  }
+
+  &__left {
+    position: absolute;
+    z-index: 1;
+    width: 418px;
+    height: 1235px;
+    background: url('../img/grey-left.png') no-repeat center;
+    background-size: cover;
+    left: 71px;
+    top: 648px;
+  }
+
+  &__right {
+    position: absolute;
+    z-index: 1;
+    width: 841px;
+    height: 435px;
+    background: url('../img/grey-right.png') no-repeat center;
+    background-size: cover;
+    right: 0;
+    top: 549px;
+  }
+
+  .container {
+    z-index: 2;
+    position: relative;
   }
 }

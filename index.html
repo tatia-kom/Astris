@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Новостной портал</title>
+    <title>ЖК Astris</title>
 
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 </head>
@@ -14,265 +15,1337 @@
 
 <header class="header">
     <div class="container">
-        <div class="header__top">
-            <div class="header__location">
-                Ваш город: <span class="header__city">Донецк</span>
+        <div class="header__flex">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="">
+                <span class="header__title">ЖК “ASTRIS”</span>
             </div>
-            <a href="/" class="header__logo"><img src="img/logo.png" alt="Закон и льготы"></a>
-            <div class="header__links">
-                <a href="#" class="header__top-link">О нас</a>
-                <a href="#" class="header__top-link">Контакты</a>
-
+            <div class="header__content">
+                <div class="header__top">
+                    <span class="header__order open-modal" data-title="Заказ звонка">Заказать звонок</span>
+                    <a href="tel:" class="header__phone">+7 (495) 292-12-91</a>
+                </div>
                 <button class="header__mobile-button">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
+                <nav class="header__menu">
+                    <a href="#about" class="header__link">О проекте</a>
+                    <a href="#residents" class="header__link">Резиденции</a>
+                    <a href="#architecture" class="header__link">Архитектура</a>
+                    <a href="#interior" class="header__link">Интерьеры</a>
+                    <a href="#infrastructure" class="header__link">Инфраструктура</a>
+                    <a href="#documents" class="header__link">Документы</a>
+                    <a href="#contacts" class="header__link">Контакты</a>
+                </nav>
             </div>
         </div>
-        <nav class="header__nav">
-            <a href="#" class="header__link">Пенсионеры</a>
-            <a href="#" class="header__link">Инвалиды</a>
-            <a href="#" class="header__link">Студенты</a>
-            <a href="#" class="header__link">Малоимущие</a>
-            <a href="#" class="header__link">Многодетные семьи</a>
-            <a href="#" class="header__link">Кадровые льготы</a>
-            <a href="#" class="header__link">Льготы для бизнеса</a>
-            <a href="#" class="header__link">Другое</a>
-        </nav>
     </div>
 </header>
 
-<div class="container">
-    <div class="page">
-        <div class="page__left">
-            <div class="left-block">
-                <p class="left-block__title left-block__title--big">Рубрики</p>
-
-                <div class="left-block__sections">
-                    <a href="#" class="left-block__section">Кадровый учет <span>1223</span></a>
-                    <a href="#" class="left-block__section">Медосмотр <span>223</span></a>
-                    <a href="#" class="left-block__section">Учет <span>79</span></a>
-                    <a href="#" class="left-block__section">Медосмотр <span>112</span></a>
-                    <a href="#" class="left-block__section">Учет <span>865</span></a>
-                    <a href="#" class="left-block__section">Учет <span>223</span></a>
-                    <a href="#" class="left-block__section">Медосмотр <span>223</span></a>
-                    <a href="#" class="left-block__section">Учет <span>223</span></a>
-                </div>
-
-                <div class="left-block__sections">
-                    <a href="#" class="left-block__section">Кадровый учет <span>1223</span></a>
-                    <a href="#" class="left-block__section">Медосмотр <span>223</span></a>
-                    <a href="#" class="left-block__section">Учет <span>79</span></a>
-                    <a href="#" class="left-block__section">Медосмотр <span>112</span></a>
-                    <a href="#" class="left-block__section">Учет <span>865</span></a>
-                    <a href="#" class="left-block__section">Учет <span>223</span></a>
-                    <a href="#" class="left-block__section">Медосмотр <span>223</span></a>
-                    <a href="#" class="left-block__section">Учет <span>223</span></a>
-                </div>
-            </div>
-
-            <div class="adv__vertical" style="background: red; height: 600px"></div>
-
-            <div class="left-block">
-                <p class="left-block__title">Подпишитесь на рассылку</p>
-                <input type="text" class="left-block__input" placeholder="Ваш E-mail">
-                <button class="left-block__button">Подписаться</button>
-            </div>
-            <div class="left-block">
-                <p class="left-block__title">Мы в соц. сетях</p>
-                <div class="left-block__socials">
-                    <a href="#" class="left-block__soc"><img src="img/fb.svg" alt=""></a>
-                    <a href="#" class="left-block__soc"><img src="img/vk.svg" alt=""></a>
-                    <a href="#" class="left-block__soc"><img src="img/insta.svg" alt=""></a>
-                    <a href="#" class="left-block__soc"><img src="img/yt.svg" alt=""></a>
-                </div>
+<section class="top">
+    <div class="top__bg">
+        <div class="container">
+            <div class="top__content">
+                <p class="top__title">Резиденции на</p>
+                <p class="top__address">Косыгина, 21</p>
+                <p class="top__description">ASTRIS — 42 РЕЗИДЕНЦИИ КЛАССА DELUXE ОТ 120 ДО 354 М2 В САМОМ ПРЕСТИЖНОМ РАЙОНЕ МОСКВЫ</p>
+                <button class="button top__button open-modal" data-title="Запись на просмотр"><span>Записаться на просмотр</span></button>
             </div>
         </div>
 
-        <div class="page__content">
-            <div class="page__search-block">
-                <input type="text" class="page__search" placeholder="Поиск">
-                <button class="page__search-button">Найти</button>
-            </div>
+        <span class="top__scroll">Листайте вниз</span>
+    </div>
+</section>
 
-            <h1 class="page__title">Заголовок H1</h1>
+<!-- О ПРОЕКТЕ -->
 
-            <div class="page__flex">
-                <div class="page__part">
-                    <p class="page__category">
-                        Новости
-                        <a href="#" class="page__all-link">Смотреть все новости</a>
-                    </p>
-
-                    <div class="page__news">
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="page__part">
-                    <p class="page__category">
-                        Статьи
-                        <a href="#" class="page__all-link">Смотреть все статьи</a>
-                    </p>
-
-                    <div class="page__news">
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-block__cover" style="background-image: url(img/img.jpg)"></div>
-                            <div class="news-block__right">
-                                <a href="#" class="news-block__title">Мясо&Огонь: фестиваль шашлыка в “Пурпурной овце”</a>
-                                <p class="news-block__date">Пн, 29 июля 2019</p>
-                                <p class="news-block__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько</p>
-                            </div>
-                        </div>
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="title">О проекте</h2>
+    </div>
+    <div class="about__slider">
+        <div class="about__slide">
+            <div class="about__flex">
+                <div class="about__photo" style="background-image: url('img/about1.jpg')"></div>
+                <div class="container">
+                    <div class="about__content">
+                        <p class="about__slide-title">Дизайн и архитектура</p>
+                        <p class="about__text">Классический стиль, высочайшее качество материалов, изысканные интерьеры.</p>
+                        <button class="button about__button open-modal"><span>Скачать презентацию</span></button>
                     </div>
                 </div>
             </div>
-
-            <div class="adv__horizontal" style="background: red"></div>
-
-            <div class="page__text">
-                <h2>О нас</h2>
-
-                <p>С каждым годом российское законодательство в вопросах трудовых взаимоотношений усложняется всё сильнее. Кадровым специалистам бывает нелегко разобраться со всеми нюансами и тонкостями приема сотрудников на работу, оформления кадровых документов и действующими ограничениями либо обязательными требованиями законодательства.</p>
-                <p>Онлайн-журнал «Делать Дело» всегда готов предоставить готовые ответы на самые популярные вопросы, которые только могут затрагивать кадровое дело (трудоустройство, увольнение и иные нюансы трудового законодательства). Простые и понятные публикации, удобный поиск и достоверная и только актуальная информация – это то, что пригодится всем участникам трудовых взаимоотношений: не только кадровикам, но и простым сотрудникам, руководителям, работодателям и бухгалтерам.</p>
-                <p>С каждым годом российское законодательство в вопросах трудовых взаимоотношений усложняется всё сильнее. Кадровым специалистам бывает нелегко разобраться со всеми нюансами и тонкостями приема сотрудников на работу, оформления кадровых документов и действующими ограничениями либо обязательными требованиями законодательства.</p>
-                <p>Онлайн-журнал «Делать Дело» всегда готов предоставить готовые ответы на самые популярные вопросы, которые только могут затрагивать кадровое дело (трудоустройство, увольнение и иные нюансы трудового законодательства). Простые и понятные публикации, удобный поиск и достоверная и только актуальная информация – это то, что пригодится всем участникам трудовых взаимоотношений: не только кадровикам, но и простым сотрудникам, руководителям, работодателям и бухгалтерам.</p>
+        </div>
+        <div class="about__slide">
+            <div class="about__flex">
+                <div class="about__photo" style="background-image: url('img/about2.jpg')"></div>
+                <div class="container">
+                    <div class="about__content">
+                        <p class="about__slide-title">Инфраструктура</p>
+                        <p class="about__text">Двухуровневая подземная парковка на 140 мест, спа-центр, бассейн и салон красоты для резидентов Astris и их гостей.</p>
+                        <button class="button about__button open-modal"><span>Скачать презентацию</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__slide">
+            <div class="about__flex">
+                <div class="about__photo" style="background-image: url('img/about2.jpg')"></div>
+                <div class="container">
+                    <div class="about__content">
+                        <p class="about__slide-title">Виды</p>
+                        <p class="about__text">Густая зелень парков, силуэт МГУ и парадная архитектура Ленинского проспекта.</p>
+                        <button class="button about__button open-modal"><span>Скачать презентацию</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about__slide">
+            <div class="about__flex">
+                <div class="about__photo" style="background-image: url('img/about2.jpg')"></div>
+                <div class="container">
+                    <div class="about__content">
+                        <p class="about__slide-title">Ход строительства</p>
+                        <p class="about__text">Завершение строительства намечено на I квартал 2020.</p>
+                        <button class="button about__button open-modal"><span>Скачать презентацию</span></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<footer class="footer">
-    <div class="footer__container">
-        <div class="footer__nav">
-            <div class="footer__nav-part">
-                <a href="#" class="footer__link">Пенсионеры</a>
-                <a href="#" class="footer__link">Инвалиды</a>
-                <a href="#" class="footer__link">Студенты</a>
-                <a href="#" class="footer__link">Малоимущие</a>
-                <a href="#" class="footer__link">Многодетные семьи</a>
+<!-- / О ПРОЕКТЕ -->
+
+<!-- РЕЗИДЕНЦИИ -->
+
+<section class="plan" id="residents">
+    <div class="container">
+        <h3 class="title title--small">Планировочные решения</h3>
+        <div class="plan__filters">
+            <div class="plan__filter">2-х комнатная</div>
+            <div class="plan__filter">3-х комнатная</div>
+            <div class="plan__filter">7-х комнатная</div>
+            <div class="plan__filter plan__filter--selected">8-х комнатная</div>
+        </div>
+        <div class="plan__filters plan__filters--border_top plan__filters--small">
+            <div class="plan__filter">120-140м<sup>2</sup></div>
+            <div class="plan__filter">160-200м<sup>2</sup></div>
+            <div class="plan__filter">320-350м<sup>2</sup></div>
+        </div>
+        <div class="plan__buttons">
+            <span class="plan__get open-modal" data-title="Получить планировки">Получить все планировки</span>
+            <button class="button"><span>Сбросить фильтры</span></button>
+        </div>
+
+        <!-- РАЗВЕРНУТАЯ ПЛАНИРОВКА -->
+
+        <div class="plan-big">
+            <span class="plan-big__back">Вернуться</span>
+
+            <div class="plan-big__slider">
+                <div class="plan-big__slide">
+                    <div class="plan-big__slide-content">
+                        <div class="plan-big__photo" style="background-image: url(img/plan-big.png)"></div>
+                        <div class="plan-big__right">
+                            <div class="plan-big__flex">
+                                <div class="plan-big__column">
+                                    <p class="plan__name">Резиденция №</p>
+                                    <p class="plan__num">42</p>
+                                </div>
+                                <div class="plan-big__column plan-big__rooms">
+                                    <p class="plan-big__room"><span>3+</span>Спальни</p>
+                                    <p class="plan-big__room"><span>4</span>Санузла</p>
+                                    <p class="plan-big__room"><span>6</span>Этаж</p>
+                                </div>
+                                <div class="plan-big__column">
+                                    <p class="plan__square plan-big__square">264,4 м<sup>2</sup></p>
+                                    <p class="plan__square-label">Общая площадь</p>
+                                </div>
+                            </div>
+
+                            <div class="plan-big__flex plan-big__squares">
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>1.</span>
+                                        <span>Прихожая</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>2.</span>
+                                        <span>Гостиная</span>
+                                        <span></span>
+                                        <span>53,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>3.</span>
+                                        <span>Кладовая</span>
+                                        <span></span>
+                                        <span>2,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>4.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>5,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>5.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>16,3м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>6.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>9,1м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>7.</span>
+                                        <span>Столовая</span>
+                                        <span></span>
+                                        <span>15,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>8.</span>
+                                        <span>Кухня</span>
+                                        <span></span>
+                                        <span>21,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>9.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>4,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>10.</span>
+                                        <span>Гостевой сан.узел</span>
+                                        <span></span>
+                                        <span>2,4м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>11.</span>
+                                        <span>Постирочная</span>
+                                        <span></span>
+                                        <span>4,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>12.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>13.</span>
+                                        <span>Кабинет</span>
+                                        <span></span>
+                                        <span>20,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>14.</span>
+                                        <span>Гостевая комната</span>
+                                        <span></span>
+                                        <span>19,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>15.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>16.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>1,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>17.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>4,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>18.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>19.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>15,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>20.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>3,5м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>21.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>3,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>22.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>7,6м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>23.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>17,4м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>24.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>25.</span>
+                                        <span>Дровяной камин</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-big__slide">
+                    <div class="plan-big__slide-content">
+                        <div class="plan-big__photo" style="background-image: url(img/plan-big.png)"></div>
+                        <div class="plan-big__right">
+                            <div class="plan-big__flex">
+                                <div class="plan-big__column">
+                                    <p class="plan__name">Резиденция №</p>
+                                    <p class="plan__num">38</p>
+                                </div>
+                                <div class="plan-big__column plan-big__rooms">
+                                    <p class="plan-big__room"><span>3+</span>Спальни</p>
+                                    <p class="plan-big__room"><span>4</span>Санузла</p>
+                                    <p class="plan-big__room"><span>6</span>Этаж</p>
+                                </div>
+                                <div class="plan-big__column">
+                                    <p class="plan__square plan-big__square">264,4 м<sup>2</sup></p>
+                                    <p class="plan__square-label">Общая площадь</p>
+                                </div>
+                            </div>
+
+                            <div class="plan-big__flex plan-big__squares">
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>1.</span>
+                                        <span>Прихожая</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>2.</span>
+                                        <span>Гостиная</span>
+                                        <span></span>
+                                        <span>53,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>3.</span>
+                                        <span>Кладовая</span>
+                                        <span></span>
+                                        <span>2,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>4.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>5,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>5.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>16,3м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>6.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>9,1м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>7.</span>
+                                        <span>Столовая</span>
+                                        <span></span>
+                                        <span>15,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>8.</span>
+                                        <span>Кухня</span>
+                                        <span></span>
+                                        <span>21,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>9.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>4,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>10.</span>
+                                        <span>Гостевой сан.узел</span>
+                                        <span></span>
+                                        <span>2,4м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>11.</span>
+                                        <span>Постирочная</span>
+                                        <span></span>
+                                        <span>4,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>12.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>13.</span>
+                                        <span>Кабинет</span>
+                                        <span></span>
+                                        <span>20,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>14.</span>
+                                        <span>Гостевая комната</span>
+                                        <span></span>
+                                        <span>19,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>15.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>16.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>1,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>17.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>4,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>18.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>19.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>15,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>20.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>3,5м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>21.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>3,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>22.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>7,6м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>23.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>17,4м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>24.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>25.</span>
+                                        <span>Дровяной камин</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-big__slide">
+                    <div class="plan-big__slide-content">
+                        <div class="plan-big__photo" style="background-image: url(img/plan-big.png)"></div>
+                        <div class="plan-big__right">
+                            <div class="plan-big__flex">
+                                <div class="plan-big__column">
+                                    <p class="plan__name">Резиденция №</p>
+                                    <p class="plan__num">36</p>
+                                </div>
+                                <div class="plan-big__column plan-big__rooms">
+                                    <p class="plan-big__room"><span>3+</span>Спальни</p>
+                                    <p class="plan-big__room"><span>4</span>Санузла</p>
+                                    <p class="plan-big__room"><span>6</span>Этаж</p>
+                                </div>
+                                <div class="plan-big__column">
+                                    <p class="plan__square plan-big__square">264,4 м<sup>2</sup></p>
+                                    <p class="plan__square-label">Общая площадь</p>
+                                </div>
+                            </div>
+
+                            <div class="plan-big__flex plan-big__squares">
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>1.</span>
+                                        <span>Прихожая</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>2.</span>
+                                        <span>Гостиная</span>
+                                        <span></span>
+                                        <span>53,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>3.</span>
+                                        <span>Кладовая</span>
+                                        <span></span>
+                                        <span>2,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>4.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>5,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>5.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>16,3м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>6.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>9,1м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>7.</span>
+                                        <span>Столовая</span>
+                                        <span></span>
+                                        <span>15,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>8.</span>
+                                        <span>Кухня</span>
+                                        <span></span>
+                                        <span>21,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>9.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>4,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>10.</span>
+                                        <span>Гостевой сан.узел</span>
+                                        <span></span>
+                                        <span>2,4м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>11.</span>
+                                        <span>Постирочная</span>
+                                        <span></span>
+                                        <span>4,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>12.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>13.</span>
+                                        <span>Кабинет</span>
+                                        <span></span>
+                                        <span>20,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>14.</span>
+                                        <span>Гостевая комната</span>
+                                        <span></span>
+                                        <span>19,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>15.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>16.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>1,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>17.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>4,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>18.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>19.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>15,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>20.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>3,5м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>21.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>3,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>22.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>7,6м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>23.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>17,4м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>24.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>25.</span>
+                                        <span>Дровяной камин</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-big__slide">
+                    <div class="plan-big__slide-content">
+                        <div class="plan-big__photo" style="background-image: url(img/plan-big.png)"></div>
+                        <div class="plan-big__right">
+                            <div class="plan-big__flex">
+                                <div class="plan-big__column plan-big__rooms">
+                                    <p class="plan__name">Резиденция №</p>
+                                    <p class="plan__num">44</p>
+                                </div>
+                                <div class="plan-big__column">
+                                    <p class="plan-big__room"><span>3+</span>Спальни</p>
+                                    <p class="plan-big__room"><span>4</span>Санузла</p>
+                                    <p class="plan-big__room"><span>6</span>Этаж</p>
+                                </div>
+                                <div class="plan-big__column">
+                                    <p class="plan__square plan-big__square">264,4 м<sup>2</sup></p>
+                                    <p class="plan__square-label">Общая площадь</p>
+                                </div>
+                            </div>
+
+                            <div class="plan-big__flex plan-big__squares">
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>1.</span>
+                                        <span>Прихожая</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>2.</span>
+                                        <span>Гостиная</span>
+                                        <span></span>
+                                        <span>53,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>3.</span>
+                                        <span>Кладовая</span>
+                                        <span></span>
+                                        <span>2,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>4.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>5,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>5.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>16,3м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>6.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>9,1м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>7.</span>
+                                        <span>Столовая</span>
+                                        <span></span>
+                                        <span>15,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>8.</span>
+                                        <span>Кухня</span>
+                                        <span></span>
+                                        <span>21,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>9.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>4,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>10.</span>
+                                        <span>Гостевой сан.узел</span>
+                                        <span></span>
+                                        <span>2,4м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>11.</span>
+                                        <span>Постирочная</span>
+                                        <span></span>
+                                        <span>4,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>12.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>13.</span>
+                                        <span>Кабинет</span>
+                                        <span></span>
+                                        <span>20,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>14.</span>
+                                        <span>Гостевая комната</span>
+                                        <span></span>
+                                        <span>19,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>15.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>16.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>1,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>17.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>4,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>18.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>19.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>15,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>20.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>3,5м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>21.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>3,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>22.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>7,6м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>23.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>17,4м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>24.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>25.</span>
+                                        <span>Дровяной камин</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-big__slide">
+                    <div class="plan-big__slide-content">
+                        <div class="plan-big__photo" style="background-image: url(img/plan-big.png)"></div>
+                        <div class="plan-big__right">
+                            <div class="plan-big__flex">
+                                <div class="plan-big__column">
+                                    <p class="plan__name">Резиденция №</p>
+                                    <p class="plan__num">37</p>
+                                </div>
+                                <div class="plan-big__column plan-big__rooms">
+                                    <p class="plan-big__room"><span>3+</span>Спальни</p>
+                                    <p class="plan-big__room"><span>4</span>Санузла</p>
+                                    <p class="plan-big__room"><span>6</span>Этаж</p>
+                                </div>
+                                <div class="plan-big__column">
+                                    <p class="plan__square plan-big__square">264,4 м<sup>2</sup></p>
+                                    <p class="plan__square-label">Общая площадь</p>
+                                </div>
+                            </div>
+
+                            <div class="plan-big__flex plan-big__squares">
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>1.</span>
+                                        <span>Прихожая</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>2.</span>
+                                        <span>Гостиная</span>
+                                        <span></span>
+                                        <span>53,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>3.</span>
+                                        <span>Кладовая</span>
+                                        <span></span>
+                                        <span>2,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>4.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>5,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>5.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>16,3м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>6.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>9,1м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>7.</span>
+                                        <span>Столовая</span>
+                                        <span></span>
+                                        <span>15,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>8.</span>
+                                        <span>Кухня</span>
+                                        <span></span>
+                                        <span>21,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>9.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>4,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>10.</span>
+                                        <span>Гостевой сан.узел</span>
+                                        <span></span>
+                                        <span>2,4м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>11.</span>
+                                        <span>Постирочная</span>
+                                        <span></span>
+                                        <span>4,2м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>12.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>13.</span>
+                                        <span>Кабинет</span>
+                                        <span></span>
+                                        <span>20,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>14.</span>
+                                        <span>Гостевая комната</span>
+                                        <span></span>
+                                        <span>19,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>15.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,9м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>16.</span>
+                                        <span>Гардеробная</span>
+                                        <span></span>
+                                        <span>1,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>17.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>4,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>18.</span>
+                                        <span>Коридор</span>
+                                        <span></span>
+                                        <span>6,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>19.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>15,7м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>20.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>3,5м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="plan-big__column">
+                                    <div class="plan-big__square-list">
+                                        <span>21.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>3,8м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>22.</span>
+                                        <span>Ванная</span>
+                                        <span></span>
+                                        <span>7,6м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>23.</span>
+                                        <span>Спальня</span>
+                                        <span></span>
+                                        <span>17,4м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>24.</span>
+                                        <span>Коридо-гардеробная</span>
+                                        <span></span>
+                                        <span>5,5м<sup>2</sup></span>
+                                    </div>
+                                    <div class="plan-big__square-list">
+                                        <span>25.</span>
+                                        <span>Дровяной камин</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer__nav-part">
-                <a href="#" class="footer__link">Кадровые льготы</a>
-                <a href="#" class="footer__link">Льготы для бизнеса</a>
-                <a href="#" class="footer__link">Другое</a>
+
+            <div class="plan-big__buttons">
+                <span class="plan__get open-modal" data-title="Получить планировки">Получить все планировки</span>
+                <button class="button open-modal" data-title="Узнать цену"><span>Узнать цену</span></button>
             </div>
         </div>
-        <div class="footer__right">
-            <div class="footer__socials">
-                <a href="#" class="footer__soc">
-                    <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.5592 0.152754L8.69596 0.148315C5.47919 0.148315 3.40038 2.20899 3.40038 5.39842V7.81907H0.521508C0.272739 7.81907 0.0712891 8.01393 0.0712891 8.25429V11.7615C0.0712891 12.0019 0.272969 12.1965 0.521508 12.1965H3.40038V21.0464C3.40038 21.2868 3.60183 21.4814 3.8506 21.4814H7.60671C7.85547 21.4814 8.05692 21.2866 8.05692 21.0464V12.1965H11.423C11.6718 12.1965 11.8732 12.0019 11.8732 11.7615L11.8746 8.25429C11.8746 8.13888 11.827 8.02836 11.7427 7.94669C11.6584 7.86501 11.5436 7.81907 11.4241 7.81907H8.05692V5.76706C8.05692 4.78078 8.30018 4.28009 9.62993 4.28009L11.5588 4.27942C11.8073 4.27942 12.0087 4.08456 12.0087 3.84443V0.587748C12.0087 0.347835 11.8075 0.153198 11.5592 0.152754Z" class="footer__icon"/>
-                    </svg>
-                </a>
-                <a href="#" class="footer__soc">
-                    <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.5229 11.104C22.4635 11.008 22.0964 10.2373 20.3299 8.65314C18.4806 6.99435 18.729 7.2637 20.9565 4.39549C22.3131 2.6487 22.8555 1.58195 22.6857 1.12592C22.5243 0.691216 21.5265 0.805891 21.5265 0.805891L18.2087 0.824559C18.2087 0.824559 17.963 0.792557 17.7795 0.897898C17.6014 1.00191 17.4869 1.24192 17.4869 1.24192C17.4869 1.24192 16.9611 2.59402 16.26 3.74344C14.7819 6.16896 14.1898 6.29697 13.9483 6.14629C13.3866 5.7956 13.5274 4.73552 13.5274 3.98346C13.5274 1.63262 13.8959 0.652547 12.8083 0.399195C12.4467 0.315188 12.1818 0.259184 11.2585 0.24985C10.0743 0.237849 9.07101 0.25385 8.50379 0.52187C8.12564 0.70055 7.83444 1.09925 8.01247 1.12192C8.23191 1.14992 8.72875 1.25126 8.99235 1.59795C9.33323 2.04465 9.32081 3.05006 9.32081 3.05006C9.32081 3.05006 9.51679 5.81693 8.864 6.16096C8.41546 6.39697 7.80132 5.9156 6.48332 3.71411C5.80845 2.58736 5.29781 1.3406 5.29781 1.3406C5.29781 1.3406 5.19982 1.10858 5.02455 0.984572C4.81201 0.833894 4.51391 0.78589 4.51391 0.78589L1.35899 0.804558C1.35899 0.804558 0.885615 0.817893 0.711722 1.01657C0.55715 1.19392 0.699301 1.55928 0.699301 1.55928C0.699301 1.55928 3.16969 7.14236 5.96578 9.95724C8.53139 12.5374 11.4434 12.3681 11.4434 12.3681H12.7628C12.7628 12.3681 13.1616 12.3254 13.3645 12.1134C13.5522 11.9187 13.5453 11.5534 13.5453 11.5534C13.5453 11.5534 13.5191 9.84256 14.3416 9.59054C15.1518 9.34253 16.1924 11.244 17.2951 11.9761C18.1286 12.5294 18.7621 12.4081 18.7621 12.4081L21.7114 12.3681C21.7114 12.3681 23.2543 12.2761 22.5229 11.104Z" class="footer__icon"/>
-                    </svg>
-                </a>
-                <a href="#" class="footer__soc">
-                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                            <path d="M15.4598 0.666626H7.17979C3.36961 0.666626 0.279785 3.65196 0.279785 7.33329V15.3333C0.279785 19.0146 3.36961 22 7.17979 22H15.4598C19.27 22 22.3598 19.0146 22.3598 15.3333V7.33329C22.3598 3.65196 19.27 0.666626 15.4598 0.666626ZM20.2898 15.3333C20.2898 17.9066 18.1232 20 15.4598 20H7.17979C4.51639 20 2.34979 17.9066 2.34979 15.3333V7.33329C2.34979 4.75996 4.51639 2.66663 7.17979 2.66663H15.4598C18.1232 2.66663 20.2898 4.75996 20.2898 7.33329V15.3333Z" class="footer__icon"/>
-                            <path d="M11.3198 6C8.27138 6 5.7998 8.388 5.7998 11.3333C5.7998 14.2787 8.27138 16.6667 11.3198 16.6667C14.3682 16.6667 16.8398 14.2787 16.8398 11.3333C16.8398 8.388 14.3682 6 11.3198 6ZM11.3198 14.6667C9.41816 14.6667 7.8698 13.1707 7.8698 11.3333C7.8698 9.49467 9.41816 8 11.3198 8C13.2214 8 14.7698 9.49467 14.7698 11.3333C14.7698 13.1707 13.2214 14.6667 11.3198 14.6667Z" class="footer__icon"/>
-                            <path d="M17.2536 6.31061C17.6598 6.31061 17.9891 5.99243 17.9891 5.59995C17.9891 5.20746 17.6598 4.88928 17.2536 4.88928C16.8474 4.88928 16.5181 5.20746 16.5181 5.59995C16.5181 5.99243 16.8474 6.31061 17.2536 6.31061Z" class="footer__icon"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="22.08" height="21.3333" fill="white" transform="translate(0.279785 0.666626)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-                <a href="#" class="footer__soc">
-                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.3235 15.6046H15.1118L15.1174 14.9246C15.1174 14.6223 15.3743 14.3751 15.6881 14.3751H15.7653C16.0799 14.3751 16.3375 14.6223 16.3375 14.9246L16.3235 15.6046ZM11.7784 14.1473C11.471 14.1473 11.2196 14.3469 11.2196 14.5913V17.8987C11.2196 18.1426 11.471 18.3417 11.7784 18.3417C12.0871 18.3417 12.3388 18.1426 12.3388 17.8987V14.5913C12.3388 14.3467 12.0871 14.1473 11.7784 14.1473ZM19.1598 12.2972V18.5892C19.1598 20.0984 17.8053 21.3333 16.1495 21.3333H3.77025C2.11401 21.3333 0.759766 20.0984 0.759766 18.5892V12.2972C0.759766 10.788 2.11401 9.55283 3.77025 9.55283H16.1495C17.8053 9.55283 19.1598 10.788 19.1598 12.2972ZM4.59604 19.2723L4.59506 12.6445L6.12962 12.645V11.6629L2.03893 11.657V12.6225L3.31589 12.626V19.2723H4.59604ZM9.19604 13.6318H7.91663V17.171C7.91663 17.683 7.94877 17.939 7.91467 18.0293C7.81065 18.3038 7.34304 18.5953 7.16076 18.0589C7.12985 17.965 7.15708 17.6818 7.15659 17.1954L7.15144 13.6318H5.87914L5.88306 17.1394C5.88404 17.677 5.87055 18.0779 5.88748 18.2604C5.91864 18.582 5.9076 18.957 6.21647 19.1713C6.79202 19.5719 7.89529 19.1116 8.17129 18.5389L8.16883 19.2697L9.19629 19.2709L9.19604 13.6318ZM13.2889 17.6846L13.2862 14.739C13.2853 13.6164 12.416 12.9441 11.2362 13.8524L11.2414 11.6625L9.96345 11.6644L9.95731 19.2235L11.0083 19.2088L11.104 18.738C12.4467 19.9282 13.2909 19.1125 13.2889 17.6846ZM17.293 17.2942L16.3338 17.2992C16.3333 17.3359 16.3318 17.3784 16.3313 17.4246V17.9418C16.3313 18.2187 16.0946 18.4441 15.807 18.4441H15.6191C15.3311 18.4441 15.0943 18.2187 15.0943 17.9418V17.8844V17.3156V16.5815H17.2911V15.7826C17.2911 15.1988 17.2756 14.6152 17.2256 14.2815C17.0683 13.2257 15.5345 13.0581 14.7597 13.5986C14.5166 13.7673 14.3309 13.9932 14.2229 14.2967C14.114 14.6003 14.0598 15.0151 14.0598 15.542V17.2985C14.0603 20.2183 17.7309 19.8056 17.293 17.2942ZM12.3721 7.7587C12.4381 7.91372 12.5407 8.03935 12.6798 8.13416C12.8172 8.22756 12.9928 8.27449 13.2033 8.27449C13.3878 8.27449 13.5512 8.22637 13.6935 8.12705C13.8353 8.02821 13.9548 7.88053 14.0524 7.68356L14.0281 8.16853H15.4543V2.30874H14.3316V6.86933C14.3316 7.11633 14.1211 7.31852 13.8638 7.31852C13.6079 7.31852 13.3966 7.11633 13.3966 6.86933V2.30874H12.2249V6.2611C12.2249 6.76456 12.2345 7.10021 12.25 7.2704C12.2659 7.43941 12.3061 7.60154 12.3721 7.7587ZM8.05034 4.44919C8.05034 3.8867 8.09891 3.44747 8.19533 3.13079C8.29248 2.81529 8.46691 2.56166 8.71961 2.37037C8.97156 2.17813 9.29418 2.0819 9.68647 2.0819C10.0164 2.0819 10.2991 2.14447 10.5351 2.26702C10.7723 2.39028 10.9553 2.55028 11.0822 2.74773C11.2115 2.9459 11.2993 3.14951 11.3461 3.35787C11.394 3.56907 11.4175 3.88764 11.4175 4.31739V5.79935C11.4175 6.34287 11.395 6.74276 11.3511 6.99662C11.3076 7.2512 11.2144 7.48729 11.0699 7.70868C10.9276 7.9277 10.7439 8.0915 10.5211 8.19603C10.2959 8.30151 10.0383 8.35319 9.74731 8.35319C9.42224 8.35319 9.14845 8.30981 8.92274 8.21926C8.6963 8.12919 8.52138 7.99336 8.39675 7.81298C8.27089 7.63236 8.18233 7.41239 8.12884 7.15591C8.07512 6.89967 8.0496 6.51425 8.0496 6.00059L8.05034 4.44919ZM9.16734 6.77689C9.16734 7.10874 9.42298 7.37967 9.73431 7.37967C10.0459 7.37967 10.3005 7.10874 10.3005 6.77689V3.65748C10.3005 3.3261 10.0459 3.05517 9.73431 3.05517C9.42298 3.05517 9.16734 3.3261 9.16734 3.65748V6.77689ZM5.22042 8.352H6.56582L6.5673 3.85778L8.15706 0.00782222H6.68555L5.84037 2.86744L4.98318 0H3.52688L5.21821 3.85991L5.22042 8.352Z" class="footer__icon"/>
-                    </svg>
-                </a>
+
+        <!-- / РАЗВЕРНУТАЯ ПЛАНИРОВКА -->
+
+        <div class="plan__flex">
+            <div class="plan__item">
+                <div class="plan__photo" style="background-image: url(img/plan-small.png)"></div>
+                <div class="plan__right">
+                    <div class="plan__desc">
+                        <p class="plan__name">Резиденция №</p>
+                        <p class="plan__num">42</p>
+                        <p class="plan__square">264,4 м<sup>2</sup></p>
+                        <p class="plan__square-label">Общая площадь</p>
+                    </div>
+                    <div class="plan__hover">
+                        <div class="plan__hover-content">
+                            <span class="plan__hover-num">42</span>
+                            <span class="plan__hover-more">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan__item">
+                <div class="plan__photo" style="background-image: url(img/plan-small.png)"></div>
+                <div class="plan__right">
+                    <div class="plan__desc">
+                        <p class="plan__name">Резиденция №</p>
+                        <p class="plan__num">38</p>
+                        <p class="plan__square">264,4 м<sup>2</sup></p>
+                        <p class="plan__square-label">Общая площадь</p>
+                    </div>
+                    <div class="plan__hover">
+                        <div class="plan__hover-content">
+                            <span class="plan__hover-num">38</span>
+                            <span class="plan__hover-more">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan__item">
+                <div class="plan__photo" style="background-image: url(img/plan-small.png)"></div>
+                <div class="plan__right">
+                    <div class="plan__desc">
+                        <p class="plan__name">Резиденция №</p>
+                        <p class="plan__num">36</p>
+                        <p class="plan__square">264,4 м<sup>2</sup></p>
+                        <p class="plan__square-label">Общая площадь</p>
+                    </div>
+                    <div class="plan__hover">
+                        <div class="plan__hover-content">
+                            <span class="plan__hover-num">36</span>
+                            <span class="plan__hover-more">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan__item">
+                <div class="plan__photo" style="background-image: url(img/plan-small.png)"></div>
+                <div class="plan__right">
+                    <div class="plan__desc">
+                        <p class="plan__name">Резиденция №</p>
+                        <p class="plan__num">44</p>
+                        <p class="plan__square">264,4 м<sup>2</sup></p>
+                        <p class="plan__square-label">Общая площадь</p>
+                    </div>
+                    <div class="plan__hover">
+                        <div class="plan__hover-content">
+                            <span class="plan__hover-num">44</span>
+                            <span class="plan__hover-more">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan__item">
+                <div class="plan__photo" style="background-image: url(img/plan-small.png)"></div>
+                <div class="plan__right">
+                    <div class="plan__desc">
+                        <p class="plan__name">Резиденция №</p>
+                        <p class="plan__num">37</p>
+                        <p class="plan__square">264,4 м<sup>2</sup></p>
+                        <p class="plan__square-label">Общая площадь</p>
+                    </div>
+                    <div class="plan__hover">
+                        <div class="plan__hover-content">
+                            <span class="plan__hover-num">37</span>
+                            <span class="plan__hover-more">Подробнее</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- / РЕЗИДЕНЦИИ -->
+
+<!-- СЕРЫЙ БЛОК -->
+
+<section class="grey">
+    <div class="grey__left"></div>
+    <div class="grey__right"></div>
+
+    <div class="container">
+
+        <!-- АРХИТЕКТУРА -->
+
+        <div class="arch" id="architecture">
+            <h2 class="title">Архитектура</h2>
+
+            <div class="arch__slider" id="arch-slider">
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/arch1.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/arch2.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/arch3.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/arch1.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/arch2.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/arch3.jpg)"></div>
+                    </div>
+                </div>
             </div>
 
-            <p class="footer__text">
-                Рекламодателям <br>
-                © 2011-2019 logosite — Городское издание о культурной жизни. Сервис по поиску досуга. Права на текстовые и другие материалы, размещенные на сайте, охраняются законом.<br>
-                При цитировании обязательна прямая ссылка на www.site.city.<br>
-                Для связи: mail@mail.ru
-            </p>
+            <div class="arch__text">
+                <p>Я сделал этот дом так, чтобы он стал предметом тех, кто будет в нем жить. Респектабельное жилье должно быть консервативным, и этот дом - гимн нового русского консерватизма. Такое жилье, должно опираться на ценности, а не отталкиваться от них. Призвание арритектора - напоминать об этих ценностях, возвращать людям культуру.</p>
+            </div>
         </div>
+
+        <!-- / АРХИТЕКТУРА -->
+
+        <!-- ИНТЕРЬЕРЫ -->
+
+        <div class="interior" id="interior">
+            <h2 class="title">Интерьеры</h2>
+
+            <div class="interior__text">
+                <p>Моей задачей было создать ощущение спокойствия, уюта, когда дом — это крепость, но при этом открытая: не как замок сеньора, а как дворец просвещенного государя. Это я и называю настоящей архитектурой. Во-первых, то, у чего есть перспектива стать «благородной руиной» - даже лет через 100, без ремонта и реконструкции, будет выглядеть актуально и благородно. Во-вторых, культура детали должна быть на высочайшем уровне. В ордерной системе этого проекта для антаблемента придуман свой, неповторимый профиль. И такой же профиль — у ограждений французских балконов. А они, в свою очередь, сделаны не из сварной трубы, а из цельного металла, то есть на века. И так мы продумывали каждую деталь.</p>
+            </div>
+
+            <div class="arch__slider" id="interior-slider">
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/interior1.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/interior2.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/interior3.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/interior1.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/interior2.jpg)"></div>
+                    </div>
+                </div>
+                <div class="arch__slide">
+                    <div class="arch__slide-wrap">
+                        <div class="arch__slide-photo" style="background-image: url(img/interior3.jpg)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- / ИНТЕРЬЕРЫ -->
+
+        <!-- ИНФРАСТУКТУРА -->
+
+        <div class="infra" id="infrastructure">
+            <h2 class="title">Инфраструктура комплекса</h2>
+
+            <div class="infra__tabs">
+                <div class="infra__tab infra__tab--active">25-метровый бассейн</div>
+                <div class="infra__tab">Фитнес-клуб</div>
+                <div class="infra__tab">Панорамные окна</div>
+                <div class="infra__tab">Открытый камин</div>
+                <div class="infra__tab">Территория дома</div>
+                <div class="infra__tab">Местоположение</div>
+            </div>
+
+            <div class="infra__slider-wrap">
+                <div class="infra__slider">
+                    <div class="infra__slide" style="background-image: url('img/infra1.jpg')">
+                        <div class="infra__slide-content">
+                            <div class="infra__name">25-метровый бассейн</div>
+                            <p class="infra__text">Спа-центр, массажный кабинет, различные бани, профессиональный 25-метровый бассейн на 2 дорожки с контролем уровня pH, химической, механической и ультрафиолетовой очисткой воды, с оборудованием марок Kauffman, Spec и Dynotec — все это есть в Astris.</p>
+                        </div>
+                    </div>
+                    <div class="infra__slide" style="background-image: url('img/infra2.jpg')">
+                        <div class="infra__slide-content">
+                            <div class="infra__name">Фитнес-клуб</div>
+                            <p class="infra__text">Просторный фитнес-зал оснащен разнообразными тренажерами для кардио- и силовых тренировок, зонами для занятий боксом и йогой.</p>
+                        </div>
+                    </div>
+                    <div class="infra__slide" style="background-image: url('img/infra3.jpg')">
+                        <div class="infra__slide-content">
+                            <div class="infra__name">Панорамные окна</div>
+                            <p class="infra__text">Открытые балконы и террасы — неизменные элементы классической загородной виллы — позволяют наслаждаться садом, оставаясь дома. Возможность выйти на балкон из резиденции — принципиальное решение создателей Astris. Разнообразие переходных пространств между резиденциями и парком — призыв к диалогу с природой, взгляд в будущее городской архитектуры эпохи электромобилей.</p>
+                        </div>
+                    </div>
+                    <div class="infra__slide" style="background-image: url('img/infra4.jpg')">
+                        <div class="infra__slide-content">
+                            <div class="infra__name">Открытый камин</div>
+                            <p class="infra__text">Камин в доме - это неизменный символ гармонии, уюта и покоя. Он не только выделяется как элемент интерьера, но и уже давно выступает одним из способов релакса, позволяя снять нагрузку после суетного городского дня. Зная об этом, архитекторы разместили в каждой резиденции открытый камин. Благодаря современным системам вентиляции, использовать его абсолютно безопасно.</p>
+                        </div>
+                    </div>
+                    <div class="infra__slide" style="background-image: url('img/infra5.jpg')">
+                        <div class="infra__slide-content">
+                            <div class="infra__name">Территория дома</div>
+                            <p class="infra__text">План территории поддерживает атмосферу уюта и спокойствия. Сад резиденции разбит в стороне от активных пешеходных зон, создавая идеальные условия для уединённого отдыха или игр с детьми. Территория дома огорожена и находится под круглосуточным наблюдением.</p>
+                        </div>
+                    </div>
+                    <div class="infra__slide" style="background-image: url('img/infra6.jpg')">
+                        <div class="infra__slide-content">
+                            <div class="infra__name">Местоположение</div>
+                            <p class="infra__text">Воробьёвы горы - один из самых красивых районов Москвы, где сама природа создала естественные высоты, а поколения москвичей - богатое историческое и культурное наследие</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infra__button-wrap open-modal" data-title="Запись на просмотр"><button class="button"><span>Записаться на просмотр</span></button></div>
+        </div>
+
+        <!-- / ИНФРАСТРУКТУРА -->
+
+    </div>
+</section>
+
+<!-- / СЕРЫЙ БЛОК -->
+
+<!-- ДОКУМЕНТЫ -->
+
+<section class="docs" id="documents">
+    <div class="container">
+        <h2 class="title">ДОКУМЕНТЫ</h2>
+
+        <div class="docs__flex">
+            <a href="docs/doc1.pdf" target="_blank" class="docs__item"></a>
+            <a href="docs/doc2.pdf" target="_blank" class="docs__item"></a>
+            <a href="docs/doc3.pdf" target="_blank" class="docs__item"></a>
+        </div>
+    </div>
+</section>
+
+<!-- / ДОКУМЕНТЫ -->
+
+<footer class="footer" id="contacts">
+    <div class="footer__map" id="map"></div>
+    <div class="footer__contacts">
+        <p class="footer__title">Контакты</p>
+        <address class="footer__address">г.Москва, Косыгина, 21</address>
+        <a href="tel:" class="footer__phone">+7 (495) 292-12-91</a>
+        <button class="button open-modal" data-title="Запись на просмотр"><span>Записаться на просмотр</span></button>
     </div>
 </footer>
 
+<div class="modal">
+    <div class="modal__content">
+        <p class="modal__title">Запись на просмотр</p>
+        <form action="" class="modal__form">
+            <input type="text" placeholder="Ваше имя" class="modal__input">
+            <input type="text" placeholder="Ваш телефон" class="modal__input">
+            <button class="button modal__button"><span>Отправить</span></button>
+        </form>
+    </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="js/slick.js"></script>
 <script src="js/scripts.js"></script>
 
 </body>

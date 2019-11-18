@@ -1,12 +1,12 @@
 // fonts
 
-$mainFont: 'Open Sans';
+$fontRegular: 'Orchidea Pro Regular', sans-serif;
+$fontMedium: 'Orchidea Pro Medium', sans-serif;
+$fontSemiBold: 'Orchidea Pro SemiBold', sans-serif;
 
 // colors
 
-$bodyColor: #F9F9F9;
-$seaColor: #059DBE;
-$grey: #666;
+$bronze: #C0845E;
 
 // mixins
 
@@ -27,3 +27,20 @@ $grey: #666;
     color: $color;
   }
 }
+
+// media
+
+$lg: 1500px;
+$md: 1199px;
+$sm: 991px;
+$xs: 767px;
+
+// numbers
+
+$containerWidth: 1420px;
+$containerWidthLG: 1140px;
+$containerWidthMD: 932px;
+$containerWidthSM: 738px;
+
+
+$buttonWidth: 250px;

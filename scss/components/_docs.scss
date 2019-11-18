@@ -1,0 +1,64 @@
+@import "../base/var";
+
+.docs {
+  padding: 129px 0 0;
+
+  @media (max-width: $sm) {
+    padding-top: 60px;
+  }
+
+  @media (max-width: $xs) {
+    padding-top: 40px;
+  }
+
+  &__flex {
+    margin: 100px auto 0;
+    width: 839px;
+    padding: 23px;
+    display: flex;
+    background: linear-gradient(102.27deg, #C0845E 1.71%, #2C170A 113.99%);
+
+    @media (max-width: $sm) {
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    width: 249px;
+    height: 380px;
+    display: block;
+    background: url('../img/doc.jpg') no-repeat center;
+    background-size: cover;
+    margin-right: 23px;
+    transition: 0.3s;
+
+    @media (max-width: $sm) {
+      width: 215px;
+      height: 328px;
+    }
+
+    @media (max-width: $xs) {
+      margin: 0 0 15px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      @media (max-width: $xs) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
